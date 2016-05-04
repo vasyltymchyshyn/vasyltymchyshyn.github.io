@@ -1,0 +1,30 @@
+<div style="margin-left: 3%;" ng-show="showForm1">
+
+
+    <div class="row" >
+
+        <div class="col-md-2 fonts">
+            <input type="text" ng-model="search" placeholder="Cerca" ng-keyup="filtraRisultati()" class="col-md-1 btn btn-default">
+        </div>
+    </div>
+
+    <div ng-repeat="n in data track by $index">
+        <div class="row">
+            <hr class="style-two">
+        </div>
+            <h3 ui-sref="details({id: n.guid})" class="clickable firstDes pointer" ng-click="loading">{{n.name}}</h3>
+        <p class="fonts">{{n.address}}</p>
+        <h3></h3>
+    </div>
+
+
+
+</div>
+
+<div class="row">
+    <div class="col-md-offset-5">
+        <img src="gears%20(1).gif" ng-show="showSpinner1" style="height: 100px; width: 100px;">
+        <h3>{{message}}</h3>
+        <br/>
+    </div>
+</div>
