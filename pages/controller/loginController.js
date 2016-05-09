@@ -12,7 +12,7 @@ angular.module('myApp')
         $scope.showForm=true;
 
 
-        var sito1 = 'http://its-bitrace.herokuapp.com/api/public/v2/login';
+        var sito1 = 'https://its-bitrace.herokuapp.com/api/public/v2/login';
         $scope.login=function() {
             $scope.message = "Loading all these magnificent features";
             $scope.showSpinner = true;
