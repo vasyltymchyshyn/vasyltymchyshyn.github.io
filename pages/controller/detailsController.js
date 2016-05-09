@@ -175,7 +175,7 @@ angular.module('myApp')
     .controller('detailsController', function($scope, $state, $stateParams, $http){
 
         console.log('sono preciso!');
-        var sito2 = 'http://its-bitrace.herokuapp.com/api/v2/stores';
+        var sito2 = 'https://its-bitrace.herokuapp.com/api/v2/stores';
         var config2 = {
             headers: {'x-bitrace-session': sessionStorage.getItem('session')}
 
