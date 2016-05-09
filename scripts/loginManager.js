@@ -12,7 +12,7 @@ angular.module('myApp')
             var config1 = {
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'}
             }
-            $http.post('http://its-bitrace.herokuapp.com/api/public/v2/login',
+            $http.post('https://its-bitrace.herokuapp.com/api/public/v2/login',
                 data1,
                 config1)
                 .then(
@@ -36,7 +36,7 @@ angular.module('myApp')
         var config2 = {
             headers: {'x-bitrace-session': sessionKey}
         }
-        $http.get('http://its-bitrace.herokuapp.com/api/v2/stores',
+        $http.get('https://its-bitrace.herokuapp.com/api/v2/stores',
             config2)
             .then(
                 function(response){
